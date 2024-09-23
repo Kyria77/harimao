@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Harimao Tao</title>
+        <meta name="description" content="Página de una escuela de artes marciales. Entrenar diferentes diciplinas marciales, mindfullness y nutricionales">
+        <meta name="Author" content="Verónica Montero">
+        <meta name="keywords" content="artes marciales, Wushu, Muay thai, meditación, nutrición, entrenamiento, salud, bienestar">
+        <meta name="revisit-after" content="2 days">
+
+        <link rel="stylesheet" href="../css/lightbox.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="icon" type="image/png" href="../favicon.png">
+    </head>
+    <body>
+        <!--Comenzamos con Header, nuestra cabecera con el logo y el nombre de la empresa, y la barra de navegación-->
+        <header>
+            <div class="cabecera">
+                <img src="../assets/img/Logo_sin_fondo_1.png" class="logo" width="644" height="639" alt="Logo del gimnasio. Un tigre y una flor de loto junto con el nombre de la empresa">
+                <h1>Harimao tao</h1>
+                <img src="../assets/img/templo_pequeño.png" class="templo" width="724" height="485" alt="Templo japonés en negativo">
+            </div>
+            <nav class="navBar" id="navBar">
+                <ul class="navLinks">
+                    <li><a class="out" href="../index.html">INICIO</a></li>
+                    <li class="formacion">
+                        <a class="out" href="#">FORMACIÓN</a>
+                        <ul class="formacion-content">
+                            <li><a class="out" href="./artes_marciales.html">Artes marciales</a></li>
+                            <li><a class="out" href="./yoga.html">Yoga</a></li>
+                            <li><a class="out" href="./nutricion.html">Nutrición</a></li>
+                            <li><a class="out" href="./entrenador_personal.html">Entrenador personal</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="inn" href="#">GALERÍA</a></li>
+                    <li><a class="out" href="./presupuesto.html">PRESUPUESTO</a></li>
+                    <li><a class="out" href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--Comenzamos con Main, Consta de 4 secciones: Presentación, Formaciones, Testimonios y Noticias -->
+        <main class="black mainGaleria">
+            <div class="galeria-container">
+                <div>
+                    <h3>Nuestras clases y competiciones</h3>
+                    <div class="galeriaClases">
+                        <a href="../assets/img/galeria/artes_marciales_saco.jpg" data-lightbox="roadtrip" data-title="Artes marciales con saco"><img class="image hidden" src="../assets/img/galeria/artes_marciales_saco.jpg" alt="Profesor en sala con sacos" width="1280" height="853"></a>
+                        <a href="../assets/img/galeria/chica_kimono.jpg" data-lightbox="roadtrip" data-title="Defensa personal"><img class="image hidden" src="../assets/img/galeria/chica_kimono.jpg" alt="Chica con kimono" width="852" height="1280"></a>
+                        <a href="../assets/img/galeria/Clases_entrenamiento.jpg" data-lightbox="roadtrip" data-title="Clases Muay thai"><img class="image hidden" src="../assets/img/galeria/Clases_entrenamiento.jpg" alt="Momento de entrenamiento clase" width="853" height="1280"></a>
+                        <a href="../assets/img/galeria/muay_thai.jpg" data-lightbox="roadtrip" data-title="Entrenamiento Muay Thai río"><img class="image" src="../assets/img/galeria/muay_thai.jpg" alt="Dos niños entrenando en el río" width="1280" height="853"></a>
+                        <a href="../assets/img/galeria/Defensa_personal.jpg" data-lightbox="roadtrip" data-title="Profesora Defensa personal"><img class="image hidden" src="../assets/img/galeria/Defensa_personal.jpg" alt="Defensa personal" width="1280" height="853"></a>
+                        <a href="../assets/img/galeria/Competi_wushu.jpg" data-lightbox="roadtrip" data-title="Competición Wushu"><img class="image hidden" src="../assets/img/galeria/Competi_wushu.jpg" alt="Competicion Wushu" width="853" height="1280"></a>
+                        <a href="../assets/img/galeria/Competi_wushu_2.jpg" data-lightbox="roadtrip" data-title="Competicion Wushu"><img class="image hidden" src="../assets/img/galeria/Competi_wushu_2.jpg" alt="Competicion Wushu" width="1280" height="853"></a>
+                        <a href="../assets/img/galeria/Shaolin.jpg" data-lightbox="roadtrip" data-title="Monjes shaolin entrenando"><img class="image hidden" src="../assets/img/galeria/Shaolin.jpg" alt="Dos niños entrenando Wushu" width="1280" height="720"></a>
+                        <a href="../assets/img/galeria/wushu_1.jpg" data-lightbox="roadtrip" data-title="Profesor Wushu"><img class="image hidden" src="../assets/img/galeria/wushu_1.jpg" alt="Postura de Wushu" width="1280" height="852"></a>
+                        <a href="../assets/img/galeria/wushu_2.jpg" data-lightbox="roadtrip" data-title="Competición Wushu"><img class="image hidden" src="../assets/img/galeria/wushu_2.jpg" alt="Competicion Wushu" width="1280" height="1280"></a>
+                        <a href="../assets/img/galeria/wushu_3.jpg" data-lightbox="roadtrip" data-title="Monje shaolin meditando"><img class="image hidden" src="../assets/img/galeria/wushu_3.jpg" alt="Monje shaolin meditando" width="1280" height="581"></a>
+                        <a href="../assets/img/galeria/wushu_4.jpg" data-lightbox="roadtrip" data-title="Templo"><img class="image hidden" src="../assets/img/galeria/wushu_4.jpg" alt="Templo" width="960" height="1280"></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Wellness</h3>
+                    <div class="galeriaWellness">
+                        <a href="../assets/img/galeria/yoga_1.jpg" data-lightbox="roadtrip2" data-title="Meditación en el bosque"><img class="image" src="../assets/img/galeria/yoga_1.jpg" alt="MEditación en el bosque" width="1280" height="853"></a>
+                        <a href="../assets/img/galeria/yoga_2.jpg" data-lightbox="roadtrip2" data-title="Clase de yoga"><img class="image hidden" src="../assets/img/galeria/yoga_2.jpg" alt="Clase de yoga" width="1280" height="853"></a>
+                        <a href="../assets/img/galeria/yoga_3.jpg" data-lightbox="roadtrip2" data-title="Yoga en la playa"><img class="image hidden" src="../assets/img/galeria/yoga_3.jpg" alt="Yoga en la playa" width="1280" height="853"></a>
+                        <a href="../assets/img/galeria/Nutricion_1.jpg" data-lightbox="roadtrip2" data-title="Nutrición"><img class="image hidden" src="../assets/img/galeria/Nutricion_1.jpg" alt="Comida sana" width="1280" height="853"></a>
+                        <a href="../assets/img/galeria/Nutricion_2.jpg" data-lightbox="roadtrip2" data-title="Nutrición"><img class="image hidden" src="../assets/img/galeria/Nutricion_2.jpg" alt="Comida sana" width="1280" height="853"></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Viaje a Tailandia</h3>
+                    <div class="galeriaTailandia">
+                        <a href="../assets/img/galeria/Viaje_tailandia_1.jpg" data-lightbox="roadtrip3" data-title="Señora vendiendo en una barca"><img class="image" src="../assets/img/galeria/Viaje_tailandia_1.jpg" alt="Señora vendiendo en barca" width="1280" height="853"></a>
+                        <a href="../assets/img/galeria/Viaje_tailandia_2.jpg" data-lightbox="roadtrip3" data-title="Mano de Buda"><img class="image hidden" src="../assets/img/galeria/Viaje_tailandia_2.jpg" alt="Mano de Buda" width="853" height="1280"></a>
+                        <a href="../assets/img/galeria/Viaje_tailandia_3.jpg" data-lightbox="roadtrip3" data-title="Amigos de Tailandia"><img class="image hidden" src="../assets/img/galeria/Viaje_tailandia_3.jpg" alt="Padre e hija tailandeses" width="1280" height="852"></a>
+                        <a href="../assets/img/galeria/Viaje_tailandia_4.jpg" data-lightbox="roadtrip3" data-title="Alumna en Tailandia"><img class="image hidden" src="../assets/img/galeria/Viaje_tailandia_4.jpg" alt="Chica en Tailandia" width="855" height="1280"></a>
+                        <a href="../assets/img/galeria/Viaje_tailandia_5.jpg" data-lightbox="roadtrip3" data-title="Combate en Tailandia"><img class="image hidden" src="../assets/img/galeria/Viaje_tailandia_5.jpg" alt="Combate" width="1280" height="853"></a>
+                        <a href="../assets/img/galeria/Viaje_tailandia_6.jpg" data-lightbox="roadtrip3" data-title="Niño Muay thai"><img class="image hidden" src="../assets/img/galeria/Viaje_tailandia_6.jpg" alt="Niño Muay thai" width="1280" height="854"></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!--Comenzamos con Footer, con los derechos, datos de la empresa y mapa-->
+        <footer>
+            <div class="redesSociales">
+                <h3>Síguenos en:</h3>
+                <ul class="red">
+                    <li>
+                        <a href="https://es-es.facebook.com/login.php/" title="Facebook" target="_blank">
+                            <img class="icono" src="../assets/img/facebook.png" width="56" height="56" alt="aplicacion facebook" title="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" title="Instagram" target="_blank">
+                            <img class="icono" src="../assets/img/instagram.png" width="56" height="56" alt="aplicacion instagram" title="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.whatsapp.com/?lang=es_LA" title="WhatsApp" target="_blank">
+                            <img class="icono" src="../assets/img/whatsapp.png" width="60" height="60" alt="aplicacion whatsapp" title="WhatsApp">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="legales">
+                <h3>Contáctanos:</h3>
+                <p>Harimao Tao</p>
+                <p>Calle la Colegiata, Nº 7 Nava (Asturias)</p>
+                <p>Teléfono móvil: 670 80 90 50</p>
+                <p>&copy; Harimao Tao</p>
+                <p>Aviso Legal | Política de Cookies | Política de Privacidad</p>
+            </div>
+            <div class="cajaMap">
+                <h3>Ubicación:</h3>
+                <div id ="map"></div>
+            </div>
+        </footer>
+
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="../javascript/lightbox-plus-jquery.min.js"></script>
+        <script src="../javascript/script.js"></script>
+    </body>
+</html>
+
+

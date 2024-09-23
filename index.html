@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Harimao Tao</title>
+        <meta name="description" content="Página de una escuela de artes marciales. Entrenar diferentes diciplinas marciales, mindfullness y nutricionales">
+        <meta name="Author" content="Verónica Montero">
+        <meta name="keywords" content="artes marciales, Wushu, Muay thai, meditación, nutrición, entrenamiento, salud, bienestar">
+        <meta name="revisit-after" content="2 days">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="icon" type="image/png" href="./favicon.png">
+    </head>
+    <body>
+        <!--Comenzamos con Header, nuestra cabecera con el logo y el nombre de la empresa, y la barra de navegación-->
+        <header>
+            <div class="cabecera">
+                <img src="./assets/img/Logo_sin_fondo_1.png" class="logo" width="644" height="639" alt="Logo del gimnasio. Un tigre y una flor de loto junto con el nombre de la empresa">
+                <h1>Harimao tao</h1>
+                <img src="./assets/img/templo_pequeño.png" class="templo" width="724" height="485" alt="Templo japonés en negativo">
+            </div>
+            <nav>
+                <ul class="navLinks">
+                    <li><a class="inn" href="#">INICIO</a></li>
+                    <li class="formacion">
+                        <a class="out" href="#">FORMACIÓN</a>
+                        <ul class="formacion-content"> <!--Parte desplegable del menú-->
+                            <li><a class="out" href="./views/artes_marciales.html">Artes marciales</a></li>
+                            <li><a class="out" href="./views/yoga.html">Yoga</a></li>
+                            <li><a class="out" href="./views/nutricion.html">Nutrición</a></li>
+                            <li><a class="out" href="./views/entrenador_personal.html">Entrenador personal</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="out" href="./views/galeria.html">GALERÍA</a></li>
+                    <li><a class="out" href="./views/presupuesto.html">PRESUPUESTO</a></li>
+                    <li><a class="out" href="./views/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--Comenzamos con Main, Consta de 4 secciones: Presentación, Formaciones, Noticias y Opiniones -->
+        <main class="mainIndex">
+            <!--PRESENTACIÓN-->
+            <section class="black">
+                <div class="presentacion" style="background-image: url(../assets/img/Artes_marciales_fondo.jpg)">
+                    <div class="descripcion">
+                        <h3>"No hay atajos para llegar a ningún lugar que valga la pena."</h3>
+                        <p>El lugar es aquí. El momento es ahora. Cuídate de forma integral, porque es esencial darle importancia tanto a nuestro bienestar y entrenamiento físico, como al mental y emocional</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--FORMACIONES DE LA ESCUELA. Grid cuadrícula-->
+            <div class="formacionIndex">
+                <div>
+                    <img class="fotoClases" src="./assets/img/boxeador_tailandes.jpg" alt="Boxeador tailandés" width="1280" height="821">
+                </div>
+                <div class="cuadriculaClases">
+                    <p>Wushu</p>
+                    <a href="./views/artes_marciales.html"><img class="btnClases" id="btnClases" src="./assets/img/listados.png" alt="icono japonés a modo de botón" width="144" height="125"></a>
+                </div>
+                <div>
+                    <img class="fotoClases" src="./assets/img/artes_marciales_chica.jpg" alt="Boxeadora femenina para defensa personal" width="1280" height="853">
+                </div>
+                <div class="cuadriculaClases">
+                    <p>Yoga</p>
+                    <a href="./views/yoga.html"><img class="btnClases" src="./assets/img/listados.png" alt="icono japonés a modo de botón" width="144" height="125"></a>
+                </div>
+                <div>
+                    <img class="fotoClases" src="./assets/img/Nutricion_3.jpg" alt="Chica con fruta clases nutrición" width="1280" height="911">
+                </div>
+                <div class="cuadriculaClases">
+                    <p>Muay Thai</p>
+                    <a href="./views/artes_marciales.html"><img class="btnClases" src="./assets/img/listados.png" alt="icono japonés a modo de botón" width="144" height="125"></a>
+                </div>
+                <div>
+                    <img class="fotoClases" src="./assets/img/Monje_shaolin.png" alt="Monje Shaolin" width="1280" height="719">
+                </div>
+                <div class="cuadriculaClases">
+                    <p>Defensa personal</p>
+                    <a href="./views/artes_marciales.html"><img class="btnClases" src="./assets/img/listados.png" alt="icono japonés a modo de botón" width="144" height="125"></a>
+                </div>
+                <div>
+                    <img class="fotoClases" src="./assets/img/yoga_4.jpg" alt="Chica meditando en yoga" width="853" height="1280">
+                </div>
+                <div class="cuadriculaClases">
+                    <p>Nutrición</p>
+                    <a href="./views/nutricion.html"><img class="btnClases" src="./assets/img/listados.png" alt="icono japonés a modo de botón" width="144" height="125"></a>
+                </div>
+            </div>
+
+            <!--NOTICIAS. Noticias de la escuela cargadas desde un archivo JSON-->
+            <section class="black">
+                <h3 class="tituloOpiniones">Noticias</h3>
+                <div class="opiniones" id = "noticias"></div>
+            </section>
+
+            <!--OPINIONES. Opiniones de la escuela cargadas desde un archivo JSON-->
+            <section class="white">
+                <h3 class="tituloOpiniones">Opiniones de alumnos</h3>
+                <div class="opiniones" id = "opiniones"></div>
+            </section>
+        </main>
+        
+        <!--Comenzamos con Footer, con los derechos, datos de la empresa y mapa-->
+        <footer>
+            <div class="redesSociales">
+                <h3>Síguenos en:</h3>
+                <ul class="red">
+                    <li>
+                        <a href="https://es-es.facebook.com/login.php/" title="Facebook" target="_blank">
+                            <img class="icono" src="./assets/img/facebook.png" width="56" height="56" alt="aplicacion facebook" title="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" title="Instagram" target="_blank">
+                            <img class="icono" src="./assets/img/instagram.png" width="56" height="56" alt="aplicacion instagram" title="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.whatsapp.com/?lang=es_LA" title="WhatsApp" target="_blank">
+                            <img class="icono" src="./assets/img/whatsapp.png" width="60" height="60" alt="aplicacion whatsapp" title="WhatsApp">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="legales">
+                <h3>Contáctanos:</h3>
+                <p>Harimao Tao</p>
+                <p>Calle la Colegiata, Nº 7 Nava (Asturias)</p>
+                <p>Teléfono móvil: 670 80 90 50</p>
+                <p>&copy; Harimao Tao</p>
+                <p>Aviso Legal | Política de Cookies | Política de Privacidad</p>
+            </div>
+            <div class="cajaMap">
+                <h3>Ubicación:</h3>
+                <div id ="map"></div>
+            </div>
+        </footer>
+
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="./javascript/script.js"></script>
+        <script src="./javascript/mainIndex.js"></script>
+    </body>
+</html>
+
+

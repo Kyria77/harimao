@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Harimao Tao</title>
+        <meta name="description" content="Página de una escuela de artes marciales. Entrenar diferentes diciplinas marciales, mindfullness y nutricionales">
+        <meta name="Author" content="Verónica Montero">
+        <meta name="keywords" content="artes marciales, Wushu, Muay thai, meditación, nutrición, entrenamiento, salud, bienestar">
+        <meta name="revisit-after" content="2 days">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="icon" type="image/png" href="../favicon.png">
+    </head>
+    <body>
+        <!--Comenzamos con Header, nuestra cabecera con el logo y el nombre de la empresa, y la barra de navegación-->
+        <header>
+            <div class="cabecera">
+                <img src="../assets/img/Logo_sin_fondo_1.png" class="logo" width="644" height="639" alt="Logo del gimnasio. Un tigre y una flor de loto junto con el nombre de la empresa">
+                <h1>Harimao tao</h1>
+                <img src="../assets/img/templo_pequeño.png" class="templo" width="724" height="485" alt="Templo japonés en negativo">
+            </div>
+            <nav class="navBar" id="navBar">
+                <ul class="navLinks">
+                    <li><a class="out" href="../index.html">INICIO</a></li>
+                    <li class="formacion">
+                        <a class="out" href="#">FORMACIÓN</a>
+                        <ul class="formacion-content">
+                            <li><a class="out" href="./artes_marciales.html">Artes marciales</a></li>
+                            <li><a class="out" href="./yoga.html">Yoga</a></li>
+                            <li><a class="out" href="./nutricion.html">Nutrición</a></li>
+                            <li><a class="out" href="./entrenador_personal.html">Entrenador personal</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="out" href="./galeria.html">GALERÍA</a></li>
+                    <li><a class="inn" href="#">PRESUPUESTO</a></li>
+                    <li><a class="out" href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--Comenzamos con Main, Consta de 1 Formulario que tiene 3 partes, la primera parte contiene info y se valida. La segunda parte es el presupuesto, y la tercera, aceptar privacidad y enviar. -->
+        <main class="black mainPresupuesto">
+            <h3 class="tituloOpiniones">Formulario información y presupuesto</h3>
+            <p>¿Aún tenéis alguna duda? No hay problema, puedes consultarla ahora mismo. Puedes llamarnos, siempre estaremos encantados de atenderte, o rellenar este formulario. En la parte de abajo encontrarás la parte del formulario que te ayudará a calcular el presupuesto de cuánto te costaría al mes las opciones a las que quieras apuntarte. En el se calculan automáticamente todos los decuentos que tenemos por forma de pago, y por apuntarte a más de una actividad.</p>
+            <div class="formulario-container">
+                <form class="form" id="form" name="form" method="post" action="procesar.php">
+                    <div class="infoForm-container">
+                        <div class="input-container">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre">
+                            <small class="error" id="nombreError"></small>
+                        </div>
+                        <div class="input-container">
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos">
+                            <small class="error" id="apellidosError"></small>
+                        </div>
+                        <div class="input-container">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono">
+                            <small class="error" id="telefonoError"></small>
+                        </div>
+                        <div class="input-container">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                            <small class="error" id="emailError"></small>
+                        </div>
+                        <div class="input-container">
+                            <label for="mensaje">Comentario:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                            <small class="error" id="mensajeError"></small>
+                        </div>
+                    </div>
+                    <div class="white">
+                        <h4 id="btnPresupuesto">Presupuesto</h4>
+                        <div class="presuForm-container">
+                            <div class="input-container">
+                                <label for="selectFormacion">Formación:</label>
+                                <select id="selectFormacion" name="selectFormacion">
+                                    <option value="0" selected>No lo sé</option>
+                                    <option value="50">Muay thai (50€)</option>
+                                    <option value="50">Wushu (50€)</option>
+                                    <option value="50">Yoga (50€)</option>
+                                    <option value="50">Defensa personal (50€)</option>
+                                    <option value="100">Entrenador personal (100€)</option>
+                                </select>
+                            </div>
+                            <div class="input-container-white">
+                                <label for="pago">Forma de pago (0, 1, 3 ó 6 meses):</label>
+                                <input type="number" id="pago" name="pago">
+                                <small class="error" id="pagoError"></small>
+                            </div>
+                            <div class="input-container extras">
+                                <h5>Extras (10% descuento):</h5>
+                                <label for="ninguno">Ninguno:</label>
+                                <input type="checkbox" class="extras extra" id="ninguno" name="ninguno" value="0" checked>
+                                <label for="nutricion">Nutrición:</label>
+                                <input type="checkbox" class="extras extra" id="nutricion" name="nutricion" value="135">
+                                <label for="personal">Entrenador personal:</label>
+                                <input type="checkbox" class="extras extra" id="personal" name="personal" value="90">
+                                <label for="muay">Muay thai:</label>
+                                <input type="checkbox" class="extras extra" id="muay" name="muay" value="45">
+                                <label for="wushu">Wushu:</label>
+                                <input type="checkbox" class="extras extra" id="wushu" name="wushu" value="45">
+                                <label for="yoga">Yoga:</label>
+                                <input type="checkbox" class="extras extra" id="yoga" name="yoga" value="45">
+                                <label for="defensa">Defensa personal:</label>
+                                <input type="checkbox" class="extras extra" id="defensa" name="defensa" value="45">
+                            </div>
+                            <div class="input-container-white bold">
+                                <label for="presupuesto">PRESUPUESTO:</label>
+                                <input type="text" id="presupuesto" name="presupuesto" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="envioForm-container">
+                        <div class="input-container">
+                            <label for="privacidad">He leído la política de privacidad:</label>
+                            <input type="checkbox" id="privacidad" name="privacidad">
+                            <small class="error" id="privacidadError"></small>
+                        </div>
+                        <div class="button-container">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        
+        <!--Comenzamos con Footer, con los derechos, datos de la empresa y mapa-->
+        <footer>
+            <div class="redesSociales">
+                <h3>Síguenos en:</h3>
+                <ul class="red">
+                    <li>
+                        <a href="https://es-es.facebook.com/login.php/" title="Facebook" target="_blank">
+                            <img class="icono" src="../assets/img/facebook.png" width="56" height="56" alt="aplicacion facebook" title="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" title="Instagram" target="_blank">
+                            <img class="icono" src="../assets/img/instagram.png" width="56" height="56" alt="aplicacion instagram" title="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.whatsapp.com/?lang=es_LA" title="WhatsApp" target="_blank">
+                            <img class="icono" src="../assets/img/whatsapp.png" width="60" height="60" alt="aplicacion whatsapp" title="WhatsApp">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="legales">
+                <h3>Contáctanos:</h3>
+                <p>Harimao Tao</p>
+                <p>Calle la Colegiata, Nº 7 Nava (Asturias)</p>
+                <p>Teléfono móvil: 670 80 90 50</p>
+                <p>&copy; Harimao Tao</p>
+                <p>Aviso Legal | Política de Cookies | Política de Privacidad</p>
+            </div>
+            <div class="cajaMap">
+                <h3>Ubicación:</h3>
+                <div id ="map"></div>
+            </div>
+        </footer>
+
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="../javascript/script.js"></script>
+        <script src="../javascript/presupuesto.js"></script>
+    </body>
+</html>
+
+

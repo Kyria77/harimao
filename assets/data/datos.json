@@ -1,0 +1,51 @@
+{
+    "noticias" : [
+        {
+           "imagen" : "./assets/img/galeria/Viaje_tailandia_5.jpg",
+           "descripcion" : "Luchadores peleando en un ring",
+           "anchura" : "1280",
+           "altura" : "853",
+           "titulo" : "Empezamos curso con descuentos",
+           "noticia" : "Por fin llegó el momento de empezar las clases. Después del veranito, el cuerpo necesita poco a poco volver a la actividad, desde la consciencia y el trabajo integral. Sabemos que después de las vacaciones. Y para ello, tenemos un descuento maravilloso en las clases si pagas por trimestre, es decir, <span>pagando 3 meses, un 10% de descuento en la cuota. Si pagas 6 meses, un 15% de descuento en la cuota.</span>"
+        },
+        {
+           "imagen" : "./assets/img/Nutricion_3.jpg",
+           "descripcion" : "Mujer con fruta",
+           "anchura" : "1280",
+           "altura" : "911",
+           "titulo" : "Nuevas sesiones de Nutrición",
+           "noticia" : "Estrenamos clases particulares con uno de nuestros mejores especialistas. Sabemos que es difícil apuntarte a todas las clases para un entrenamiento integral y por eso hemos aunado todo en una misma clase. Particular. Para ti."
+        },
+        {
+           "imagen" : "./assets/img/galeria/Viaje_tailandia_1.jpg",
+           "descripcion" : "Mujer vendiendo en Tailandia",
+           "anchura" : "1280",
+           "altura" : "853",
+           "titulo" : "Viaje a Tailandia",
+           "noticia" : "Ya empezamos a organizar el próximo viaje a Tailandia el verano que viene. Aún queda mucho, pero se hace mucho más llevadero sabiendo que al final de la temporada te irás a Tailandia a entrenar con los mejores guerreros Muay thai, y, por supuesto, a disfrutar de un exótico descanso. <span>¡Apúntate desde ya!"
+        }
+    ],
+    "opiniones" : [
+        {
+            "opinion" : "Este es un gimnasio de artes marciales asiáticas magnífico. Las clases de muay thai y su profesor Nacho consiguen que tu puedas aprender sin importar tú nivel. Lo mejor: la calidad humana tanto de profesores como alumnos. Inmejorable. Gracias Juan , por tu buen aporte hacia nuestro profesor Nacho. Si que es muy dedicado en sus clases y se motiva con el alumnado.",
+            "foto" : "./assets/img/Almuna1.jpg",
+            "anchuraFoto" : "1136",
+            "alturaFoto" : "1256",
+            "nombreAlumno" : "Teresa"
+        },
+        {
+            "opinion" : "Una autentica escuela de Wushu de Wudang. El Shifu Juan consigue impartir una clase exigente en la que te entregas completamente y siempre desde un ambiente agradable y respetuoso. Estoy muy agradecido a este gran maestro por su desinteresada ayuda, que parece que no tiene fondo el pozo de sus conocimientos en las artes marciales.",
+            "foto" : "./assets/img/Almuna2.png",
+            "anchuraFoto" : "174",
+            "alturaFoto" : "192",
+            "nombreAlumno" : "Víctor"
+        },
+        {
+            "opinion" : "It is a martial art school that offers quite a few things. They have had extensive experience and studies in the field of martial arts for many years. I love going to train not only because of the facilities that are phenomenal, they don’t lack anything…but also because of the teachers and because they are like a big family. They treat you very well, the truth is that I recommend it to everyone, it is a great place to train and learn.",
+            "foto" : "./assets/img/Almuna3.png",
+            "anchuraFoto" : "316",
+            "alturaFoto" : "300",
+            "nombreAlumno" : "Mario"
+        }
+    ]
+}

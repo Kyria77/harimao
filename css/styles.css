@@ -1,0 +1,585 @@
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-* ESTILOS GENERALES *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+@font-face {
+    font-family: Covered By Your Grace;
+    src: url(./../assets/font/CoveredByYourGrace-Regular.ttf);
+}
+@font-face {
+    font-family: Shojumaru;
+    src: url(./../assets/font/Shojumaru-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif, Verdana, Tahoma;
+    font-size: 17px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* HEADER *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/img/fondo_papiro.png);
+    font-family: Shojumaru;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.cabecera{
+    width: 100%;
+    padding: 15px;
+    display:grid;
+    grid-template-columns: 150px auto 150px;
+    align-items: center;
+    justify-items: center;
+}
+.logo{
+    width: 130px;
+    height: 130px;
+    margin-left: 50px;
+}
+h1{
+    color: #ee6e26;
+    font-size: 65px;
+    text-align: center;
+}
+.templo{
+    width: 200px;
+    height: 130px;
+    margin-right: 50px;
+}
+/*******************MENÚ DE NAVEGACIÓN*********************************/
+
+.navLinks{
+    padding: 15px 30px;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.navLinks a{
+    transition: 0.6s all ease;
+}
+.inn{
+    padding: 10px 30px;
+    margin: 5px 10px;
+    text-decoration: none;
+    background-color: antiquewhite;
+    color: #ee6e26;
+}
+.out{
+    padding: 10px 30px;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: #d6021c;
+}
+.out:hover{
+    color: #ee6e26;
+    font-size: 22px;
+}
+.formacion-content{
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.formacion-content li{
+    display: block;
+    margin-top: 15px;
+}
+.formacion-content li a{
+    padding: 15px 20px;
+}
+.show{
+    display: block;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* MAIN INDEX *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+.mainIndex{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    max-width: 100%;
+}
+
+.black, .white{
+    max-width: 100%;
+    padding-top: 10px;
+    font-family: Covered By Your Grace;
+    font-size: 27px;
+    letter-spacing: 1.5px;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+.white{
+    background-color: white;
+    color: black;
+}
+.presentacion{
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    gap: 20px;
+    padding: 30px;
+    background: linear-gradient(to top, #000, transparent);
+    width: 100%;
+    height: 70%;
+}
+.formacionIndex{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 200px 200px;
+    font-family: Covered By Your Grace;
+    font-size: 36px;
+    font-weight: bold;
+    color:#ee6e26;
+    letter-spacing: 1.5px;
+    text-align: center;
+    justify-content: center;
+}
+.fotoClases{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.cuadriculaClases{
+    display: inline-block;
+    padding: 20px;
+    padding-top: 30px;
+}
+.btnClases{
+    width: 50px;
+    height: 50px;
+}
+.tituloOpiniones{
+    height: 80px;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+.opiniones{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.testimonio{
+    width: 31%;
+    min-height: 500px;
+    margin: 7px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17.5px;
+    border-radius: 10px;
+}
+.imgNoticias{
+    width: 100%;
+    height: auto;
+}
+.testimonio h4{
+    padding: 10px;
+}
+.testimonio p{
+    padding-bottom: 10px;
+}
+.testimonio small, .testimonio span{
+    font-weight: bold;
+}
+.img-circular{
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* MAIN ARTES MARCIALES *-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+.mainArtesMarciales{
+    display: grid;
+    grid-template-rows: 100px 200px auto auto auto;
+}
+.mainArtesMarciales p, .mainPresupuesto p{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.backgroundBlanco{
+    background-color: white;
+}
+.marciales-container{
+    width: 70%;
+    margin: 0 auto;
+    font-family:'Times New Roman', Times, serif;
+    padding: 10px;
+}
+.tiposMarciales{
+    display:flex;
+    flex-direction: row;
+}
+.tiposMarciales p, .yoga-container p{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 22px;
+    padding: 20px;
+    text-align: justify;
+}
+.tiposMarciales span, .yoga-container span{
+    font-weight: bold;
+    color: #ee6e26;
+}
+.imgMarciales{
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    margin-right: 15px;
+    margin-top: 15px;
+    border-radius: 25px;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* MAIN YOGA *-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.yoga-container{
+    justify-content: center;
+    align-items: center;
+}
+.imgYoga, .imgPersonal{
+    height: 320px;
+    width: auto;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 25px;
+}
+.yoga-container p{
+    padding: 20px;
+}
+.centradoClases{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+.btnNutricion{
+    width: 150px;
+    margin-left: 440px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:#ee6e26;
+    text-align: center;
+    box-shadow: 1px 3px 5px 1px #000;
+}
+.btnNutricion a{
+    text-decoration: none;
+    color: white;
+}
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* MAIN GALERIA *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.mainGaleria{
+    min-height: 500px;
+    width: 100%;
+}
+.galeria-container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.galeria-container h3{
+    height: 90px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 5px;
+    padding-right: 0px;
+}
+.image{
+    height: 215px;
+    width: auto;
+    margin: .5rem;
+    border-radius: .4rem;
+    transition: all .3s ease;
+}
+.image:hover{
+    border: 3px solid #ee6e26;
+    transform: scale(1.10);
+}
+.hidden{
+    display: none;
+}
+.galeriaClases, .galeriaWellness, .galeriaTailandia{
+    margin-top: .5rem;
+    padding: 10px;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* MAIN PRESUPUESTO *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.mainPresupuesto{
+    display: grid;
+    grid-template-rows: 100px auto auto;
+}
+.formulario-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.formulario-container h4{
+    padding: 10px;
+    cursor: pointer;
+}
+.infoForm-container, .presuForm-container, .envioForm-container{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+.infoForm-container small{
+    font-size: 18px;
+}
+h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: lighter;  
+}
+.bold{
+    font-weight: bold;
+}
+.input-container, .input-container-white{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+}
+.input-container p{
+    text-align: left;
+}
+.extras label{
+    margin-left: 75px;
+}
+.input-container input{
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+.input-container-white input{
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    color: black
+}
+.input-container textarea{
+    padding: 5px;
+    border: none;
+    border: 2px solid grey;
+    background-color: transparent;
+    color: #fff;
+    resize: none;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.button-container button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.button-container button:hover{
+    background-color:#ee6e26;
+    transform: translateY(-5px);
+}
+.valido{
+    border-color: green;
+}
+.invalido{
+    border-color: red;
+}
+.error{
+    color: red;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* MAIN CONTACTO *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+.contacto-container, .yoga-container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 43% 55%;
+}
+.centrado{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.infoContacto{
+    font-family: Shojumaru;
+    line-height: 35px;
+    text-align: center;
+    font-size: 24px;
+}
+.temploContacto{
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+#mapContacto{
+    width: 750px;
+    height: 350px;
+    z-index: 2;
+    border: 1px solid black;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* FOOTER *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+footer{
+    width: 100%;
+    padding: 10px 30px;
+    background-image: url(../assets/img/fondo_papiro.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+footer h3{
+    font-family: Shojumaru;
+    color:#d6021c;
+}
+.redesSociales{
+    width: 25%;
+    margin-left: 80px;
+}
+.red{
+    padding: 10px 15px;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.red li{
+    padding: 5px 12px;
+}
+.icono{
+    width: 40px;
+    height: auto;
+    transition: all .3s ease;
+}
+.icono:hover{
+    transform: translateY(-5px) scale(1.05);  /*Esto es para que al pasar el ratón suba un poco el icono y se haga un poco más grande*/
+}
+.legales{
+    width: 50%;
+    padding-right: 300px;
+}
+.legales p, .legales h3{
+    text-align: center;
+    line-height: 19px;
+}
+.cajaMap{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 40px;
+}
+#map{
+    width: 300px;
+    height: 150px;
+}
+
+/*************** Versión Tablet ****************************/
+
+@media (max-width:991px){
+    .navLinks{
+        padding: 15px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .navLinks li{
+        padding-top: 7px;
+    }
+    .inn{
+        background-color: transparent;
+    }
+    .yoga-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .galeria-container{
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mapContacto{
+        width: 500px;
+    }
+    .contacto-container{
+        width: 90%;
+    }
+    .legales{
+        padding-right: 30px;
+    }
+    .cajaMap{
+        margin-right: 5px;
+    }
+}

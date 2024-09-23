@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Harimao Tao</title>
+        <meta name="description" content="Página de una escuela de artes marciales. Entrenar diferentes diciplinas marciales, mindfullness y nutricionales">
+        <meta name="Author" content="Verónica Montero">
+        <meta name="keywords" content="artes marciales, Wushu, Muay thai, meditación, nutrición, entrenamiento, salud, bienestar">
+        <meta name="revisit-after" content="2 days">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="icon" type="image/png" href="../favicon.png">
+    </head>
+    <body>
+        <!--Comenzamos con Header, nuestra cabecera con el logo y el nombre de la empresa, y la barra de navegación-->
+        <header>
+            <div class="cabecera">
+                <img src="../assets/img/Logo_sin_fondo_1.png" class="logo" width="644" height="639" alt="Logo del gimnasio. Un tigre y una flor de loto junto con el nombre de la empresa">
+                <h1>Harimao tao</h1>
+                <img src="../assets/img/templo_pequeño.png" class="templo" width="724" height="485" alt="Templo japonés en negativo">
+            </div>
+            <nav class="navBar" id="navBar">
+                <ul class="navLinks">
+                    <li><a class="out" href="../index.html">INICIO</a></li>
+                    <li class="formacion">
+                        <a class="inn" href="#">FORMACIÓN</a>
+                        <ul class="formacion-content">
+                            <li><a class="out" href="./artes_marciales.html">Artes marciales</a></li>
+                            <li><a class="inn" href="#">Yoga</a></li>
+                            <li><a class="out" href="./nutricion.html">Nutrición</a></li>
+                            <li><a class="out" href="./entrenador_personal.html">Entrenador personal</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="out" href="./galeria.html">GALERÍA</a></li>
+                    <li><a class="out" href="./presupuesto.html">PRESUPUESTO</a></li>
+                    <li><a class="out" href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!--Comenzamos con Main, consta de título actividad, imagen, explicación y horarios -->
+        <main class="white">
+            <h3 class="tituloOpiniones">Yoga</h3>
+            <div class="yoga-container">
+                <img src="../assets/img/galeria/yoga_2.jpg" class="imgYoga" alt="Clase de yoga" width="1280" height="853">
+                <p>El yoga no es sólo ejercicio físico, sino una <span>de origen milenario</span> que ha evolucionado en el mundo occidental. Yoga significa <span>“unión del cuerpo, la mente y el alma”</span>. Tiene su origen en la India hace más de tres mil años. Su origen son unos textos sagrados llamados Vedas escritos en sánscrito. Por eso utilizamos palabras en sánscrito para hablar de las posturas. Los <span>beneficios del yoga se notan en el cuerpo, la mente y el alma</span>. Esto es porque nos ayuda a mejorar la concentración, la postura, la digestión y la calidad de nuestros pensamientos, entre muchas otras cosas.</p>
+            </div>
+            <p class="centrado centradoClases">Martes y jueves: 18:30 a 19:30</p>
+            <p class="centrado centradoClases">Lunes y Miércoles (infantil): 17:30 a 18:30</p>
+        </main>
+        
+        <!--Comenzamos con Footer, con los derechos, datos de la empresa y mapa-->
+        <footer>
+            <div class="redesSociales">
+                <h3>Síguenos en:</h3>
+                <ul class="red">
+                    <li>
+                        <a href="https://es-es.facebook.com/login.php/" title="Facebook" target="_blank">
+                            <img class="icono" src="../assets/img/facebook.png" width="56" height="56" alt="aplicacion facebook" title="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" title="Instagram" target="_blank">
+                            <img class="icono" src="../assets/img/instagram.png" width="56" height="56" alt="aplicacion instagram" title="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.whatsapp.com/?lang=es_LA" title="WhatsApp" target="_blank">
+                            <img class="icono" src="../assets/img/whatsapp.png" width="60" height="60" alt="aplicacion whatsapp" title="WhatsApp">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="legales">
+                <h3>Contáctanos:</h3>
+                <p>Harimao Tao</p>
+                <p>Calle la Colegiata, Nº 7 Nava (Asturias)</p>
+                <p>Teléfono móvil: 670 80 90 50</p>
+                <p>&copy; Harimao Tao</p>
+                <p>Aviso Legal | Política de Cookies | Política de Privacidad</p>
+            </div>
+            <div class="cajaMap">
+                <h3>Ubicación:</h3>
+                <div id ="map"></div>
+            </div>
+        </footer>
+
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="../javascript/script.js"></script>
+    </body>
+</html>
+
+
