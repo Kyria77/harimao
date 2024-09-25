@@ -28,23 +28,23 @@ function sucess(position){
         attribution: 'Harimao Tao'
     }).addTo(mapContacto);
 
-    let inicio = L.icon({ //Aquí tenemos que meter los datos del icono
+    let inicio = L.icon({ 
         iconUrl: '../assets/img/contacto/Icono_rojo_2.png',
-        iconSize: [35, 50],  //Tamaño, si tiene sombre todo por dos
-        iconAnchor: [15, 50],   //Para centrar el icono
+        iconSize: [35, 50],  
+        iconAnchor: [15, 50],   
         popupAnchor: [-3, -76]
     });
 
-    let final = L.icon({ //Aquí tenemos que meter los datos del icono
+    let final = L.icon({ 
         iconUrl: '../assets/img/contacto/Icono_verde_2.png',
-        iconSize: [35, 50],  //Tamaño, si tiene sombre todo por dos
-        iconAnchor: [22,50],   //Para centrar el icono
+        iconSize: [35, 50],  
+        iconAnchor: [22,50],   
         popupAnchor: [-3, -76]
     });
-    let track = L.icon({ //Aquí tenemos que meter los datos del icono
+    let track = L.icon({ 
         iconUrl: '../assets/img/contacto/Icono_azul.png',
-        iconSize: [35, 50],  //Tamaño, si tiene sombre todo por dos
-        iconAnchor: [15, 50],   //Para centrar el icono
+        iconSize: [35, 50],  
+        iconAnchor: [15, 50],   
         popupAnchor: [-3, -76]
     });
 
@@ -71,7 +71,7 @@ function error(){
     let mapContacto = L.map("mapContacto").setView([43.358250, -5.508957], 17);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: 'Harimao Tao' //Podemos poner el título que queramos
+        attribution: 'Harimao Tao' 
     }).addTo(mapContacto);
 
     let popupContacto = L.popup().setLatLng([43.358250, -5.508957]).setContent('<p>Harimao Tao<br>Calle la Colegiata, Nº 7 Nava (Asturias)<br>Teléfono móvil: 670 80 90 50</p>')
