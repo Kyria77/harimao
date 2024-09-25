@@ -29,20 +29,20 @@ function sucess(position){
     }).addTo(mapContacto);
 
     let inicio = L.icon({ //Aquí tenemos que meter los datos del icono
-        iconUrl: '../assets/img/contacto/Icono_rojo_2.png',
+        iconUrl: './assets/img/contacto/Icono_rojo_2.png',
         iconSize: [35, 50],  //Tamaño, si tiene sombre todo por dos
         iconAnchor: [15, 50],   //Para centrar el icono
         popupAnchor: [-3, -76]
     });
 
     let final = L.icon({ //Aquí tenemos que meter los datos del icono
-        iconUrl: '../assets/img/contacto/Icono_verde_2.png',
+        iconUrl: './assets/img/contacto/Icono_verde_2.png',
         iconSize: [35, 50],  //Tamaño, si tiene sombre todo por dos
         iconAnchor: [22,50],   //Para centrar el icono
         popupAnchor: [-3, -76]
     });
     let track = L.icon({ //Aquí tenemos que meter los datos del icono
-        iconUrl: '../assets/img/contacto/Icono_azul.png',
+        iconUrl: './assets/img/contacto/Icono_azul.png',
         iconSize: [35, 50],  //Tamaño, si tiene sombre todo por dos
         iconAnchor: [15, 50],   //Para centrar el icono
         popupAnchor: [-3, -76]
