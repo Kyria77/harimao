@@ -19,7 +19,7 @@ function realizarFetch(url){
         }) 
 }
 
-realizarFetch("../assets/data/datos.json")
+realizarFetch("./assets/data/datos.json")
     .then(data =>{
         data.noticias.map(item =>{
             noticiasIndex.innerHTML +=
@@ -33,7 +33,7 @@ realizarFetch("../assets/data/datos.json")
         })
     });
 
-realizarFetch("../assets/data/datos.json")
+realizarFetch("./assets/data/datos.json")
     .then(data =>{
         data.opiniones.map(item =>{
             opinionesIndex.innerHTML +=
