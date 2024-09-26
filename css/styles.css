@@ -503,9 +503,6 @@ footer h3{
     font-family: Shojumaru;
     color:#d6021c;
 }
-.redesSociales{
-    width: 25%;
-}
 .red{
     padding: 10px 15px;
     display: flex;
@@ -522,9 +519,6 @@ footer h3{
 }
 .icono:hover{
     transform: translateY(-5px) scale(1.05);  /*Esto es para que al pasar el ratón suba un poco el icono y se haga un poco más grande*/
-}
-.legales{
-    width: 50%;
 }
 .legales p, .legales h3{
     text-align: center;
