@@ -495,7 +495,7 @@ footer{
     padding: 10px 30px;
     background-image: url(../assets/img/fondo_papiro.png);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 15px;
 }
@@ -505,7 +505,6 @@ footer h3{
 }
 .redesSociales{
     width: 25%;
-    margin-left: 80px;
 }
 .red{
     padding: 10px 15px;
@@ -526,7 +525,6 @@ footer h3{
 }
 .legales{
     width: 50%;
-    padding-right: 300px;
 }
 .legales p, .legales h3{
     text-align: center;
@@ -535,7 +533,6 @@ footer h3{
 .cajaMap{
     margin-top: 8px;
     margin-bottom: 8px;
-    margin-right: 40px;
 }
 #map{
     width: 300px;
