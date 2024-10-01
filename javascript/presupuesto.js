@@ -35,7 +35,7 @@ function validarNombre(){
 }
 function validarApellidos(){
     const apellidos = apellidosInput.value;
-    const apellidosVal = /^[a-zA-Z ]{1,15}$/
+    const apellidosVal = /^[a-zA-Z ]{1,40}$/
     if(apellidosVal.test(apellidos)){
         apellidosInput.classList.add('valido');
         apellidosInput.classList.remove('invalido');
